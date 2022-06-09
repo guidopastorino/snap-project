@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <title>Snap | Front-End Mentor Challenge</title>
+  
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- NAVBAR -->
+    <nav class="nav">
+      <div class="nav__left">
+        <div class="nav__logo">
+          <a href="#">
+            <span>snap</span>
+          </a>
+        </div>
+
+        <div class="nav__btn-responsive">
+          <button id="btn-open">
+            <img src="./images/icon-menu.svg" alt="btn responsive img">
+          </button>
+        </div>
+      </div>
+
+      <div id="menu" class="nav__right">
+        <div class="nav__right-btn-close">
+            <button id="btn-close"><img src="./images/icon-close-menu.svg" alt="btn responsive img"></button>
+        </div>
+
+        <div class="nav__right-navigation">
+          <ul>
+            <!-- Features -->
+            <li id="li-dd-1">
+              <!-- li name -->
+              <div id="li-txt-1" class="li-txt">
+                <span>Features</span>
+                <img class="img-normal" src="./images/icon-arrow-down.svg" alt="link nav img arrow">
+                <img class="img-active" src="./images/icon-arrow-up.svg" alt="link nav img arrow">
+              </div>
+
+              <!-- li dropdown -->
+              <div id="li-dropdown-1" class="d-none">
+                <ul>
+                  <!--  -->
+                  <li>
+                    <a href="#">
+                      <div><img src="./images/icon-todo.svg" alt="dropdown img"></div>
+                      <div><span>Todo List</span></div>
+                    </a>
+                  </li>
+                  <!--  -->
+                  <li>
+                    <a href="#">
+                      <div><img src="./images/icon-calendar.svg" alt="dropdown img"></div>
+                      <div><span>Calendar</span></div>
+                    </a>
+                  </li>
+                  <!--  -->
+                  <li>
+                    <a href="#">
+                      <div><img src="./images/icon-reminders.svg" alt="dropdown img"></div>
+                      <div><span>Reminders</span></div>
+                    </a>
+                  </li>
+                  <!--  -->
+                  <li>
+                    <a href="#">
+                      <div><img src="./images/icon-planning.svg" alt="dropdown img"></div>
+                      <div><span>Planning</span></div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- Company -->
+            <li id="li-dd-2">
+              <!-- li name -->
+              <div id="li-txt-2" class="li-txt">
+                <span>Company</span>
+                <img class="img-normal" src="./images/icon-arrow-down.svg" alt="link nav img arrow">
+                <img class="img-active" src="./images/icon-arrow-up.svg" alt="link nav img arrow">
+              </div>
+
+              <!-- dropdown -->
+              <div id="li-dropdown-2" class="d-none">
+                <ul>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Careers -->
+            <li>
+              <!-- li name -->
+              <a href="#"><div><span class="li-txt">Careers</span></div></a>
+            </li>
+            <!-- About -->
+            <li>
+              <!-- li name -->
+              <a href="#"><div><span class="li-txt">About</span></div></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__right-btns">
+          <button class="nav__btn nav__btn--login">Log in</button>
+          <button class="nav__btn">Register</button>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="content__info">
+        <div class="content__info-1">
+          <header>
+            <div class="content__info-title">
+              <h1>Make remote work</h1>
+            </div>
+          </header>
+  
+          <div class="content__info-desc">
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+          </div>
+  
+          <div class="content__info-btn">
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+
+        <div class="content__info-2">
+          <div class="content__info-brands">
+            <img src="./images/client-databiz.svg" alt="brands img">
+            <img src="./images/client-audiophile.svg" alt="brands img">
+            <img src="./images/client-meet.svg" alt="brands img">
+            <img src="./images/client-maker.svg" alt="brands img">
+          </div>
+        </div>
+      </div>
+
+      <div class="content__img">
+        <!-- desk -->
+        <img class="img-desk" src="./images/image-hero-desktop.png" alt="content img">
+        <!-- mobile -->
+        <img class="img-mobile" src="./images/image-hero-mobile.png" alt="content img">
+      </div>
+    </div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
